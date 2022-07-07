@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>アンケート</title>
+</head>
+
+<body>
+    <h1 style="background-color: lime;">アンケート</h1>
+    <form>
+        <div class="form_txt">
+            <label>お名前： <input type="text" name="user_name" size="20"></label>
+        </div>
+        <div class="form_question1">
+            <p><b>質問 （１）</b></p>
+            <p>学校の特別授業を受けたいですか。</p>
+            <input type="radio" name="question1"> <label for="Yes">Yes</label>
+            <input type="radio" name="question1"><label for="No">No</label>
+        </div>
+        <div class="form_question2">
+            <p><b>質問 （２）</b></p>
+            <p>自分が入りたい授業選んでください。</p>
+            <input type="checkbox" name="Excel" id="word&excel"><label for="word&excel">Excel & Word</label>
+            <input type="checkbox" name="webdevelopmet" id="webdevelopmet"><label for="webdevelopmet">Web Development</label>
+            <input type="checkbox" name="softwaredevelopment" id="softwaredevelopment"><label for="softwaredevelopment">Software Development</label>
+        </div>
+        <div class="form_question3">
+            <p><b>質問 （２）</b></p>
+            <p></p>
+            <textarea name="question3" id="question3" cols="50" rows="6"></textarea>
+        </div>
+        <div class="question_3">
+            <p><b>質問 （２）</b></p>
+            <p>性性別を選択してください。</p>
+            <select name="Sex" id="sex">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        </div>
+        <div class="form_btn">
+            <br><input style="margin-right: 20px;" type="submit" value="送信">
+            <input type="reset" value=" クリア">
+        </div>
+    </form>
+</body>
+
+</html>
